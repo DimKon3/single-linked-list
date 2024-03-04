@@ -29,14 +29,14 @@ class SingleList:
             return
         elif (self.head.value == value) and (self.head.next is None):
             self.head.value = None
-            print("Элемент удален. Список пустой")
+            print("Элемент ", value, " удален. Список пустой")
             return
         elif (self.head.value != value) and (self.head.next is None):
             print("Элемент не найден")
             return
         elif (self.head.value == value) and (self.head.next is not None):    
             self.head = self.head.next
-            print("Элемент удален")
+            print("Элемент ", value, " удален")
             return
         temp = current_node.next
         while temp.value is not None:
